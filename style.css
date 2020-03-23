@@ -1,0 +1,61 @@
+#menu {
+    /*border: 1px solid #000; // om te testen */
+    /*border-top: 1px solid #000;*/
+    width: 200px;
+    display: block;
+}
+#menu.open {
+    max-height: 500px;
+    overflow: hidden;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+}
+#menu.closed {
+    max-height: 0px;
+    overflow: hidden;
+    /* transition */
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+}
+#toggle {
+    display: inline-block;
+    padding-left: 20px;
+    padding-top: 10px;
+    font-size: 40px;
+    color: #000;
+    transform: rotate(-90deg); 
+    cursor: grab;
+}
+a {
+    text-decoration: none;;
+}
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin-top: 0;
+}
+ul li {
+    display: block;
+    height: 30px;
+    /*border: 1px solid #000;*/
+    text-align: left;
+    padding-left: 20px;;
+    padding-top: 15px;
+}
+span.knoptekst {
+ padding-left: 15px;
+ font-size: 18;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Achtergrondkleuren */
+/* default body background: */
+.red { background-color: red; color: #fff}
+.green { background-color: green; color: #fff;}
+.blue { background-color: blue; color:#fff;}
+.yellow { background-color: yellow; color: #000; }
+.orange { background-color: orange; color: #000;;}
+.grey { background-color: grey; color:#000; }
+.white {background-color: white; color: #000; }
